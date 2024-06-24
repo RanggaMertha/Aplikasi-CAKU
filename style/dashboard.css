@@ -1,0 +1,186 @@
+.dashboard {
+    -fx-background: #EEEEEE;
+}
+
+.user-name {
+    -fx-font-size: 2.6em;
+    -fx-font-family: "Calibri Light";
+}
+
+.date-label {
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+}
+
+.section-title {
+    -fx-font-size: 1.4em;
+    -fx-font-family: "Calbiri Light";
+}
+
+/* Table View */
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0;
+    -fx-border-color: #AAAAAA;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 10);
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 0 0 1 0; /* Border bawah untuk header */
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Warna teks header */
+}
+
+.table-view .table-cell {
+    -fx-padding: 10;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333; /* Warna teks sel */
+    -fx-background-color: transparent; /* Pastikan latar belakang sel transparan */
+}
+
+.table-view .table-cell:selected {
+    -fx-background-color: #DCE775;
+    -fx-text-fill: #000000;
+}
+
+.table-view .table-cell:hover {
+    -fx-background-color: #F0F0F0;
+}
+
+.table-view .no-content-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #999999;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+/* Tampilan Pengeluaran */
+.new-trans-container {
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 10 10 10 10;
+    -fx-spacing: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 10);
+}
+
+.new-trans-container Label {
+    -fx-font-family: "Calbiri Light";
+    -fx-font-size: 1.2em;    
+    -fx-text-fill: #333333;
+}
+
+.new-trans-container TextField {
+    -fx-pref-height: 30;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 3, 0, 0, 3);
+}
+
+.new-trans-container DatePicker {
+    -fx-pref-height: 30;
+    -fx-background-color:#FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 3, 0, 0, 3);
+}
+
+.new-trans-container RadioButton {
+    -fx-padding: 5 15 5 0;
+    -fx-translate-y: 10;
+}
+
+.new-trans-container RadioButton::selected {
+    -fx-background-color: #263F73;
+    -fx-text-fill: white;
+}
+
+.new-trans-container ImageVIew {
+    -fx-translate-y: 5;
+    -fx-padding: 0 15 0 0;
+}
+.new-trans-container Button {
+    -fx-background-color: #263F73;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 250;
+    -fx-font-size: 1.3em;
+    -fx-font-family: "Calbiri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 5;
+    -fx-background-radius: 5;
+}
+
+.new-trans-container Button:hover {
+    -fx-cursor: hand;
+}
+
+/* Tampilan Pemasukan */
+/* General Styles for AnchorPane */
+.anchor-pane-view {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-border-width: 0 1 0 0;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box,  #AAAAAA, 3, 0, 0, 3);
+}
+
+/* Specific Styles for Each Category */
+#balancePane {
+    -fx-background-color: #4CAF50;
+}
+
+#shoppingPane {
+    -fx-background-color: #03A9F4;
+}
+
+/* Tambahkan gaya spesifik lainnya untuk kategori lainnya */
+#foodPane {
+    -fx-background-color: #FFC107;
+}
+
+#billsPane {
+    -fx-background-color: #F44336;
+}
+
+#othersPane {
+    -fx-background-color: #9E9E9E;
+}
+
+/* Styles for Labels */
+.view-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.3em; /* Adjust size as needed */
+    -fx-text-alignment: center;
+    -fx-font-weight: bold; /* Make text bold */
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.5), 2, 0, 0, 1); /* Add shadow for better visibility */
+}
+
+.amount-label-view {
+    -fx-font-size: 1.5em; /* Adjust size as needed */
+    -fx-font-family: Calibri;
+    -fx-text-alignment: center;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold; /* Make text bold */
+}
+
+/* Styles for ImageView */
+.image-view-logo {
+    -fx-fill: #FFFFFF;
+    -fx-fit-width: 30;
+    -fx-fit-height: 30;
+}

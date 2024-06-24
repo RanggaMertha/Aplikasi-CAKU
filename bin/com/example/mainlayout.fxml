@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <left>
+      <VBox fx:id="navbar" prefHeight="750.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <fx:include source="client.fxml"/>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="maincontent" prefHeight="750.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <fx:include source="dashboard.fxml"/>
+      </AnchorPane>
+   </center>
+</BorderPane>
